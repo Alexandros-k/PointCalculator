@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PointCalculator</string>
+    <string name="header1">Character Stats</string>
+    <string name="header2">Ability Modifier</string>
+    <string name="header3">STR</string>
+    <string name="header4">DEX</string>
+    <string name="header5">CON</string>
+    <string name="header6">INT</string>
+    <string name="header7">WIS</string>
+    <string name="header8">CHA</string>
+    <string name="header9">-1</string>
+
+</resources>
