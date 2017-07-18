@@ -320,65 +320,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
 
-        TextView str1 = (TextView) findViewById(R.id.et1);
-        str1.setText(String.valueOf(baseStr));
-        int str = Integer.parseInt(str1.getText().toString());
 
-        TextView dex1 = (TextView) findViewById(R.id.et2);
-        dex1.setText(String.valueOf(baseDex));
-        int dex = Integer.parseInt(dex1.getText().toString());
-
-        TextView con1 = (TextView) findViewById(R.id.et3);
-        con1.setText(String.valueOf(baseCon));
-        int con = Integer.parseInt(con1.getText().toString());
-
-        TextView int1 = (TextView) findViewById(R.id.et4);
-        int1.setText(String.valueOf(baseInt));
-        int inte = Integer.parseInt(int1.getText().toString());
-
-        TextView wis1 = (TextView) findViewById(R.id.et5);
-        wis1.setText(String.valueOf(baseWis));
-        int wis = Integer.parseInt(wis1.getText().toString());
-
-        TextView cha1 = (TextView) findViewById(R.id.et6);
-        cha1.setText(String.valueOf(baseCha));
-        int cha = Integer.parseInt(cha1.getText().toString());
-
-        TextView totalPoints = (TextView) findViewById(R.id.totalPointsId);
-        totalPoints.setText(String.valueOf(points));
-
-        TextView strMod = (TextView) findViewById(R.id.strId);
-        strMod.setText(String.valueOf(modS));
-        int modifS = Integer.parseInt(strMod.getText().toString());
-
-
-        TextView dexMod = (TextView) findViewById(R.id.dexId);
-        dexMod.setText(String.valueOf(modD));
-        int modifD = Integer.parseInt(dexMod.getText().toString());
-
-        TextView conMod = (TextView) findViewById(R.id.conId);
-        conMod.setText(String.valueOf(modC));
-        int modifC = Integer.parseInt(conMod.getText().toString());
-
-        TextView intMod = (TextView) findViewById(R.id.intId);
-        intMod.setText(String.valueOf(modI));
-        int modifI = Integer.parseInt(intMod.getText().toString());
-
-        TextView wisMod = (TextView) findViewById(R.id.wisId);
-        wisMod.setText(String.valueOf(modW));
-        int modifW = Integer.parseInt(wisMod.getText().toString());
-
-        TextView chaMod = (TextView) findViewById(R.id.chaId);
-        chaMod.setText(String.valueOf(modCh));
-        int modifCh = Integer.parseInt(chaMod.getText().toString());
-
-
-        outState.putInt("STRENGTH",str);
-        outState.putInt("DEXTERITY",dex);
-        outState.putInt("CONSTITUTION",con);
-        outState.putInt("INTELLIGENCE",inte);
-        outState.putInt("WISDOM",wis);
-        outState.putInt("CHARISMA",cha);
+        outState.putInt("STRENGTH",baseStr);
+        outState.putInt("DEXTERITY",baseDex);
+        outState.putInt("CONSTITUTION",baseCon);
+        outState.putInt("INTELLIGENCE",baseInt);
+        outState.putInt("WISDOM",baseWis);
+        outState.putInt("CHARISMA",baseCha);
         outState.putInt("POINTS",points);
         outState.putInt("MODIFIERS",modS);
         outState.putInt("MODIFIERD",modD);
@@ -393,7 +341,7 @@ public class MainActivity extends AppCompatActivity {
         outState.putInt("COUNTERW",counterW);
         outState.putInt("COUNTERCH",counterCh);
 
-        System.out.println("edwwww"+""+modS+""+modCh);
+
     }
 
     public void levelUpStrength() {
