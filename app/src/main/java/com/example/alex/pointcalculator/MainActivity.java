@@ -1791,21 +1791,27 @@ public class MainActivity extends AppCompatActivity {
 
         final TextView strMod = (TextView) findViewById(R.id.strId);
         strMod.setText(String.valueOf(-1));
+        setModS(-1);
 
         final TextView dexMod = (TextView) findViewById(R.id.dexId);
         dexMod.setText(String.valueOf(-1));
+         setModD(-1);
 
         final TextView conMod = (TextView) findViewById(R.id.conId);
         conMod.setText(String.valueOf(-1));
+        setModC(-1);
 
         final TextView intMod = (TextView) findViewById(R.id.intId);
         intMod.setText(String.valueOf(-1));
+        setModI(-1);
 
         final TextView wisMod = (TextView) findViewById(R.id.wisId);
         wisMod.setText(String.valueOf(-1));
+        setModW(-1);
 
         final TextView chaMod = (TextView) findViewById(R.id.chaId);
         chaMod.setText(String.valueOf(-1));
+        setModCh(-1);
 
     }
 
@@ -1872,6 +1878,51 @@ public class MainActivity extends AppCompatActivity {
         this.cost = cost;
     }
 
+    public int getModS() {
+        return modS;
+    }
 
+    public void setModS(int modS) {
+        this.modS = modS;
+    }
 
+    public int getModD() {
+        return modD;
+    }
+
+    public void setModD(int modD) {
+        this.modD = modD;
+    }
+
+    public int getModC() {
+        return modC;
+    }
+
+    public void setModC(int modC) {
+        this.modC = modC;
+    }
+
+    public int getModI() {
+        return modI;
+    }
+
+    public void setModI(int modI) {
+        this.modI = modI;
+    }
+
+    public int getModW() {
+        return modW;
+    }
+
+    public void setModW(int modW) {
+        this.modW = modW;
+    }
+
+    public int getModCh() {
+        return modCh;
+    }
+
+    public void setModCh(int modCh) {
+        this.modCh = modCh;
+    }
 }
