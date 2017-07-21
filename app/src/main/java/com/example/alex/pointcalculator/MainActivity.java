@@ -363,7 +363,7 @@ public class MainActivity extends AppCompatActivity {
 
        totalPoints.setText(String.valueOf(points));
        int tp = Integer.parseInt(totalPoints.getText().toString());
-       System.out.println(String.format("Start+Str:%s+points:%s+counter:%s+cost:%s",str,points,counterS,cost));
+       System.out.println(String.format("StartStr:%s+points:%s+counter:%s+cost:%s",str,points,counterS,cost));
 
 
        switch (str) {
@@ -466,7 +466,6 @@ public class MainActivity extends AppCompatActivity {
     public void levelDownStrength() {
 
             TextView totalPoints = (TextView) findViewById(R.id.totalPointsId);
-            System.out.println("Startpoints"+points);
 
 
             final TextView strMod = (TextView) findViewById(R.id.strId);
@@ -476,7 +475,7 @@ public class MainActivity extends AppCompatActivity {
             int str = Integer.parseInt(str1.getText().toString());
 
 
-            System.out.println(String.format("Start+Str:%s+points:%s+counter:%s+cost:%s",str,points,counterS,cost));
+            System.out.println(String.format("StartStr:%s+points:%s+counter:%s+cost:%s",str,points,counterS,cost));
 
 
             switch (str) {
@@ -560,7 +559,7 @@ public class MainActivity extends AppCompatActivity {
                     strMod.setText(String.valueOf(modS));
                     cost = 2;
                     points = points + cost;
-                    counterS=9;
+                    counterS=7;
                     str1.setText(String.valueOf(14));
 
 
@@ -803,7 +802,7 @@ public class MainActivity extends AppCompatActivity {
                 dexMod.setText(String.valueOf(modD));
                 cost = 2;
                 points = points + cost;
-                counterD=9;
+                counterD=7;
                 dex1.setText(String.valueOf(14));
 
 
@@ -1029,7 +1028,7 @@ public class MainActivity extends AppCompatActivity {
                 conMod.setText(String.valueOf(modC));
                 cost = 2;
                 points = points + cost;
-                counterC=9;
+                counterC=7;
                 con1.setText(String.valueOf(14));
 
 
@@ -1260,7 +1259,7 @@ public class MainActivity extends AppCompatActivity {
                 intMod.setText(String.valueOf(modI));
                 cost = 2;
                 points = points + cost;
-                counterI=9;
+                counterI=7;
                 int1.setText(String.valueOf(14));
 
 
@@ -1494,7 +1493,7 @@ public class MainActivity extends AppCompatActivity {
                 strMod.setText(String.valueOf(modW));
                 cost = 2;
                 points = points + cost;
-                counterW=9;
+                counterW=7;
                 wis1.setText(String.valueOf(14));
 
 
@@ -1731,7 +1730,7 @@ public class MainActivity extends AppCompatActivity {
                 chaMod.setText(String.valueOf(modCh));
                 cost = 2;
                 points = points + cost;
-                counterCh=9;
+                counterCh=7;
                 cha1.setText(String.valueOf(14));
 
 
@@ -1760,33 +1759,38 @@ public class MainActivity extends AppCompatActivity {
         str1.setText(String.valueOf(8));
         int str = Integer.parseInt(str1.getText().toString());
         setBaseStr(8);
+        setCounterS(0);
 
 
         TextView dex1 = (TextView) findViewById(R.id.et2);
         dex1.setText(String.valueOf(8));
         int dex = Integer.parseInt(dex1.getText().toString());
         setBaseDex(8);
-
+        setCounterD(0);
 
         TextView con1 = (TextView) findViewById(R.id.et3);
         con1.setText(String.valueOf(8));
         int con = Integer.parseInt(con1.getText().toString());
         setBaseCon(8);
+        setCounterC(0);
 
         TextView int1 = (TextView) findViewById(R.id.et4);
         int1.setText(String.valueOf(8));
         int inte = Integer.parseInt(int1.getText().toString());
         setBaseInt(8);
+        setCounterI(0);
 
         TextView wis1 = (TextView) findViewById(R.id.et5);
         wis1.setText(String.valueOf(8));
         int wis = Integer.parseInt(wis1.getText().toString());
         setBaseWis(8);
+         setCounterW(0);
 
         TextView cha1 = (TextView) findViewById(R.id.et6);
         cha1.setText(String.valueOf(8));
         int cha = Integer.parseInt(cha1.getText().toString());
         setBaseCha(8);
+        setCounterCh(0);
 
 
         final TextView strMod = (TextView) findViewById(R.id.strId);
@@ -1924,5 +1928,53 @@ public class MainActivity extends AppCompatActivity {
 
     public void setModCh(int modCh) {
         this.modCh = modCh;
+    }
+
+    public int getCounterS() {
+        return counterS;
+    }
+
+    public void setCounterS(int counterS) {
+        this.counterS = counterS;
+    }
+
+    public int getCounterD() {
+        return counterD;
+    }
+
+    public void setCounterD(int counterD) {
+        this.counterD = counterD;
+    }
+
+    public int getCounterC() {
+        return counterC;
+    }
+
+    public void setCounterC(int counterC) {
+        this.counterC = counterC;
+    }
+
+    public int getCounterI() {
+        return counterI;
+    }
+
+    public void setCounterI(int counterI) {
+        this.counterI = counterI;
+    }
+
+    public int getCounterW() {
+        return counterW;
+    }
+
+    public void setCounterW(int counterW) {
+        this.counterW = counterW;
+    }
+
+    public int getCounterCh() {
+        return counterCh;
+    }
+
+    public void setCounterCh(int counterCh) {
+        this.counterCh = counterCh;
     }
 }
